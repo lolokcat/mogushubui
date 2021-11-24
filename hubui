@@ -145,7 +145,7 @@ function Mogus:CreateUI()
 
 	function scripthandler:NewScriptThing(name, thumbnail, scriptcallback)
 		local name = name or "new_script:nil"
-		local scriptcallback = scriptcallback or function() end)
+		local scriptcallback = scriptcallback or function() end
 		-- Gui to Lua
 		-- Version: 3.2
 
