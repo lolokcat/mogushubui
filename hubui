@@ -214,7 +214,7 @@ function Mogus:CreateUI()
 		ImageLabel.Image = thumbnail
 
 		play_arrow.MouseButton1Click:Connect(function()
-			callback()
+			scriptcallback()
 			spin(play_arrow)
 		end)
 	end
