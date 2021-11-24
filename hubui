@@ -135,8 +135,8 @@ function Mogus:CreateUI()
 	home.ImageRectSize = Vector2.new(36, 36)
 	function spin(obj)
 			local degrees = (360 - obj.Rotation)
-			for i = 1, degrees do wait()
-				obj.Rotation = obj.Rotation + 1
+			for i = 1, degrees * 2 do wait()
+				obj.Rotation = obj.Rotation + 2
 			end
 			obj.Rotation = 0
 	end
