@@ -1,222 +1,249 @@
 local Mogus = {}
 
 function Mogus:CreateUI()
-	local Ting = Instance.new("ScreenGui")
-	local Frame = Instance.new("Frame")
-	local Frame_2 = Instance.new("Frame")
-	local TextLabel = Instance.new("TextLabel")
-	local UIGradient = Instance.new("UIGradient")
-	local settings = Instance.new("ImageButton")
-	local Frame_3 = Instance.new("Frame")
-	local UICorner = Instance.new("UICorner")
-	local ScrollingFrame = Instance.new("ScrollingFrame")
-	local UIPadding = Instance.new("UIPadding")
-	local UIGridLayout = Instance.new("UIGridLayout")
-	local UICorner_2 = Instance.new("UICorner")
-	local Frame_4 = Instance.new("Frame")
-	local Frame_5 = Instance.new("Frame")
-	local UICorner_3 = Instance.new("UICorner")
-	local TextLabel_2 = Instance.new("TextLabel")
-	local UIGradient_2 = Instance.new("UIGradient")
-	local home = Instance.new("ImageButton")
+	local ScreenGui = Instance.new("ScreenGui")
+    local Frame = Instance.new("Frame")
+    local UICorner = Instance.new("UICorner")
+    local Frame_2 = Instance.new("Frame")
+    local Frame_3 = Instance.new("Frame")
+    local Frame_4 = Instance.new("Frame")
+    local UICorner_2 = Instance.new("UICorner")
+    local TextLabel = Instance.new("TextLabel")
+    local UIGradient = Instance.new("UIGradient")
+    local TextLabel_2 = Instance.new("TextLabel")
+    local UIGradient_2 = Instance.new("UIGradient")
+    local TextLabel_3 = Instance.new("TextLabel")
+    local UIGradient_3 = Instance.new("UIGradient")
+    local ScrollingFrame = Instance.new("ScrollingFrame")
+    local UIGridLayout = Instance.new("UIGridLayout")
+    local UIPadding = Instance.new("UIPadding")
+    local Frame_5 = Instance.new("Frame")
+    local UICorner_3 = Instance.new("UICorner")
 
-	Ting.Name = "Ting"
-	Ting.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-	Ting.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    
+    Frame.Parent = ScreenGui
+    Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+    Frame.Position = UDim2.new(0.278280556, 0, 0.269030273, 0)
+    Frame.Size = UDim2.new(0, 588, 0, 443)
+    
+    UICorner.CornerRadius = UDim.new(0, 4)
+    UICorner.Parent = Frame
+    
+    Frame_2.Parent = Frame
+    Frame_2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+    Frame_2.BorderSizePixel = 0
+    Frame_2.Position = UDim2.new(-0.000729723019, 0, -0.0148786623, 0)
+    Frame_2.Size = UDim2.new(0, 588, 0, 12)
+    
+    Frame_3.Parent = ScreenGui
+    Frame_3.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+    Frame_3.BorderSizePixel = 0
+    Frame_3.Position = UDim2.new(0.278280556, 0, 0.269030273, 0)
+    Frame_3.Size = UDim2.new(0, 588, 0, 6)
+    
+    Frame_4.Parent = ScreenGui
+    Frame_4.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+    Frame_4.Position = UDim2.new(0.278181821, 0, 0.221063614, 0)
+    Frame_4.Size = UDim2.new(0, 588, 0, 46)
+    
+    UICorner_2.CornerRadius = UDim.new(0, 4)
+    UICorner_2.Parent = Frame_4
+    
+    TextLabel.Parent = Frame_4
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.Position = UDim2.new(0.0238095243, 0, 0, 0)
+    TextLabel.Size = UDim2.new(0, 574, 0, 46)
+    TextLabel.Font = Enum.Font.Gotham
+    TextLabel.Text = "Moderation Spec // Movelist"
+    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.TextSize = 25.000
+    TextLabel.TextWrapped = true
+    TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+    
+    UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+    UIGradient.Parent = TextLabel
+    
+    TextLabel_2.Parent = Frame_4
+    TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_2.BackgroundTransparency = 1.000
+    TextLabel_2.Position = UDim2.new(0.363945574, 0, 10, 0)
+    TextLabel_2.Size = UDim2.new(0, 158, 0, 21)
+    TextLabel_2.Font = Enum.Font.Gotham
+    TextLabel_2.Text = "Made by LOLOK"
+    TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_2.TextScaled = true
+    TextLabel_2.TextSize = 25.000
+    TextLabel_2.TextWrapped = true
+    TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+    
+    UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+    UIGradient_2.Parent = TextLabel_2
+    
+    TextLabel_3.Parent = Frame_4
+    TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_3.BackgroundTransparency = 1.000
+    TextLabel_3.Position = UDim2.new(0.891156435, 0, 10, 0)
+    TextLabel_3.Size = UDim2.new(0, 56, 0, 21)
+    TextLabel_3.Font = Enum.Font.Gotham
+    TextLabel_3.Text = "v1.00"
+    TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_3.TextScaled = true
+    TextLabel_3.TextSize = 25.000
+    TextLabel_3.TextWrapped = true
+    TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+    
+    UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+    UIGradient_3.Parent = TextLabel_3
+    
+    ScrollingFrame.Parent = ScreenGui
+    ScrollingFrame.Active = true
+    ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    ScrollingFrame.BackgroundTransparency = 1.000
+    ScrollingFrame.BorderSizePixel = 0
+    ScrollingFrame.Position = UDim2.new(0.278181821, 0, 0.269030243, 0)
+    ScrollingFrame.Size = UDim2.new(0, 588, 0, 443)
+    ScrollingFrame.ScrollBarThickness = 5
+    
+    UIGridLayout.Parent = ScrollingFrame
+    UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+    UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIGridLayout.CellPadding = UDim2.new(0, 10, 0, 10)
+    UIGridLayout.CellSize = UDim2.new(0, 227, 0, 227)
+    
+    UIPadding.Parent = ScrollingFrame
+    UIPadding.PaddingBottom = UDim.new(0, 5)
+    UIPadding.PaddingLeft = UDim.new(0, 5)
+    UIPadding.PaddingRight = UDim.new(0, 5)
+    UIPadding.PaddingTop = UDim.new(0, 5)
+    
+    Frame_5.Parent = ScreenGui
+    Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Frame_5.Position = UDim2.new(0.278020501, 0, 0.221063614, 0)
+    Frame_5.Size = UDim2.new(0, 588, 0, 489)
+    Frame_5.ZIndex = 0
+    
+    UICorner_3.CornerRadius = UDim.new(0, 4)
+    UICorner_3.Parent = Frame_5
+    
+    local thing = Instance.new("UIStroke")
+    thing.Parent = Frame_5
+    thing.Color = Color3.new(1, 1, 1)
+    thing.Thickness = 0
+    thing.Transparency = 0.7 
+    
+    local id = "6486359635"
 
-	Frame.Parent = Ting
-	Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
-	Frame.BorderSizePixel = 0
-	Frame.Position = UDim2.new(0.346491218, 0, 0.37643379, 0)
-	Frame.Size = UDim2.new(0, 543, 0, 425)
+    local sound = Instance.new("Sound", game.Workspace)
+    sound.SoundId = "rbxassetid://"..id
+    sound:Play()
+    
+    coroutine.resume(coroutine.create(function()
+    
+    local AudioLoudness = sound.PlaybackLoudness
+    
+    coroutine.resume(coroutine.create(function()
+        while true do wait()
+            AudioLoudness = sound.PlaybackLoudness
+            thing.Thickness = AudioLoudness
+        end
+    end))
 
-	Frame_2.Parent = Frame
-	Frame_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-	Frame_2.BorderSizePixel = 0
-	Frame_2.Position = UDim2.new(0, 0, 0.884891987, 0)
-	Frame_2.Size = UDim2.new(0, 224, 0, 48)
+    local scripthandler = {}
 
-	TextLabel.Parent = Frame_2
-	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel.BackgroundTransparency = 1.000
-	TextLabel.Position = UDim2.new(-0.0982142836, 0, 0, 0)
-	TextLabel.Size = UDim2.new(0, 200, 0, 50)
-	TextLabel.Font = Enum.Font.Gotham
-	TextLabel.Text = game.Players.LocalPlayer.Name
-	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel.TextSize = 25.000
-	TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-	UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 127))}
-	UIGradient.Parent = TextLabel
-
-	settings.Name = "settings"
-	settings.Parent = Frame_2
-	settings.BackgroundTransparency = 1.000
-	settings.Position = UDim2.new(0.924107134, 0, 0.25, 0)
-	settings.Size = UDim2.new(0, 25, 0, 25)
-	settings.ZIndex = 2
-	settings.Image = "rbxassetid://3926307971"
-	settings.ImageRectOffset = Vector2.new(324, 124)
-	settings.ImageRectSize = Vector2.new(36, 36)
-
-	Frame_3.Parent = Frame
-	Frame_3.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-	Frame_3.Position = UDim2.new(0.360957652, 0, 0.884892106, 0)
-	Frame_3.Size = UDim2.new(0, 48, 0, 48)
-	Frame_3.ZIndex = 0
-
-	UICorner.CornerRadius = UDim.new(0, 99)
-	UICorner.Parent = Frame_3
-
-	ScrollingFrame.Parent = Frame
-	ScrollingFrame.Active = true
-	ScrollingFrame.BackgroundColor3 = Color3.fromRGB(147, 255, 156)
-	ScrollingFrame.BorderSizePixel = 0
-	ScrollingFrame.Position = UDim2.new(0.0128913447, 0, 0.0329411775, 0)
-	ScrollingFrame.Size = UDim2.new(0, 529, 0, 404)
-	ScrollingFrame.ZIndex = -1
-	ScrollingFrame.ScrollBarThickness = 3
-
-	UIPadding.Parent = ScrollingFrame
-	UIPadding.PaddingBottom = UDim.new(0, 10)
-	UIPadding.PaddingLeft = UDim.new(0, 10)
-	UIPadding.PaddingRight = UDim.new(0, 10)
-	UIPadding.PaddingTop = UDim.new(0, 10)
-
-	UIGridLayout.Parent = ScrollingFrame
-	UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-	UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	UIGridLayout.CellSize = UDim2.new(0, 160, 0, 160)
-
-	UICorner_2.CornerRadius = UDim.new(0, 4)
-	UICorner_2.Parent = Frame
-
-	Frame_4.Parent = Ting
-	Frame_4.BackgroundColor3 = Color3.fromRGB(0, 167, 81)
-	Frame_4.BorderSizePixel = 0
-	Frame_4.Position = UDim2.new(0.346491218, 0, 0.37643379, 0)
-	Frame_4.Size = UDim2.new(0, 543, 0, 8)
-
-	Frame_5.Parent = Ting
-	Frame_5.BackgroundColor3 = Color3.fromRGB(0, 167, 81)
-	Frame_5.BorderSizePixel = 0
-	Frame_5.Position = UDim2.new(0.346491218, 0, 0.337851942, 0)
-	Frame_5.Size = UDim2.new(0, 543, 0, 45)
-
-	UICorner_3.CornerRadius = UDim.new(0, 4)
-	UICorner_3.Parent = Frame_5
-
-	TextLabel_2.Parent = Frame_5
-	TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel_2.BackgroundTransparency = 1.000
-	TextLabel_2.Position = UDim2.new(0.0767397135, 0, -0.0624833778, 0)
-	TextLabel_2.Size = UDim2.new(0, 487, 0, 50)
-	TextLabel_2.ZIndex = 3
-	TextLabel_2.Font = Enum.Font.Gotham
-	TextLabel_2.Text = "'Mogus Hub"
-	TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel_2.TextSize = 25.000
-	TextLabel_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel_2.TextWrapped = true
-	TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
-
-	UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(16, 255, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 17))}
-	UIGradient_2.Parent = TextLabel_2
-
-	home.Name = "home"
-	home.Parent = Frame_5
-	home.BackgroundTransparency = 1.000
-	home.Position = UDim2.new(0.0128560066, 0, 0.214424759, 0)
-	home.Size = UDim2.new(0, 25, 0, 25)
-	home.ZIndex = 2
-	home.Image = "rbxassetid://3926305904"
-	home.ImageRectOffset = Vector2.new(964, 204)
-	home.ImageRectSize = Vector2.new(36, 36)
-	function spin(obj)
-			local degrees = (360 - obj.Rotation) * 2
-			for i = 1, degrees do wait()
-				obj.Rotation = obj.Rotation + 2
-			end
-			obj.Rotation = 0
-	end
-
-	local scripthandler = {}
-
-	function scripthandler:NewScriptThing(name, thumbnail, scriptcallback)
-		local name = name or "new_script:nil"
-		local scriptcallback = scriptcallback or function() end
-		-- Gui to Lua
-		-- Version: 3.2
-
-		-- Instances:
-
+    function scripthandler:NewMove(movename, knockbacknum, damagenum, desc)
 		local Frame = Instance.new("Frame")
-		local UICorner = Instance.new("UICorner")
-		local Frame_2 = Instance.new("Frame")
 		local TextLabel = Instance.new("TextLabel")
 		local UIGradient = Instance.new("UIGradient")
-		local UICorner_2 = Instance.new("UICorner")
-		local play_arrow = Instance.new("ImageButton")
-		local ImageLabel = Instance.new("ImageLabel")
+		local TextLabel_2 = Instance.new("TextLabel")
+		local UIGradient_2 = Instance.new("UIGradient")
+		local TextLabel_3 = Instance.new("TextLabel")
+		local UIGradient_3 = Instance.new("UIGradient")
+		local TextLabel_4 = Instance.new("TextLabel")
+		local UIGradient_4 = Instance.new("UIGradient")
+		local UIPadding = Instance.new("UIPadding")
+		local UICorner = Instance.new("UICorner")
 
-		--Properties:
+		Frame.Parent = game.StarterGui.ScreenGui.ScrollingFrame
+		Frame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+		Frame.BorderSizePixel = 0
+		Frame.Position = UDim2.new(0.677575767, 0, 0.568300307, 0)
+		Frame.Size = UDim2.new(0, 227, 0, 227)
 
-		Frame.Parent = ScrollingFrame
-		Frame.BackgroundColor3 = Color3.fromRGB(0, 167, 81)
-		Frame.Position = UDim2.new(-0.513324797, 0, -0.0435294509, 0)
-		Frame.Size = UDim2.new(0, 160, 0, 160)
-
-		UICorner.CornerRadius = UDim.new(0, 3)
-		UICorner.Parent = Frame
-
-		Frame_2.Parent = Frame
-		Frame_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-		Frame_2.BorderSizePixel = 0
-		Frame_2.Position = UDim2.new(0.0687500015, 0, 0.77401042, 0)
-		Frame_2.Size = UDim2.new(0, 137, 0, 25)
-
-		TextLabel.Parent = Frame_2
+		TextLabel.Parent = Frame
 		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel.BackgroundTransparency = 1.000
-		TextLabel.Position = UDim2.new(0.0583941527, 0, 0.0898960829, 0)
-		TextLabel.Size = UDim2.new(0, 151, 0, 20)
+		TextLabel.Position = UDim2.new(-0.000496347551, 0, 0.911398172, 0)
+		TextLabel.Size = UDim2.new(0, 227, 0, 20)
 		TextLabel.Font = Enum.Font.Gotham
-		TextLabel.Text = name
+		TextLabel.Text = "Knockback:"..knockbacknum
 		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel.TextSize = 15.000
-		TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextSize = 19.000
+		TextLabel.TextWrapped = true
 		TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel.TextYAlignment = Enum.TextYAlignment.Top
 
-		UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 127))}
+		UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
 		UIGradient.Parent = TextLabel
 
-		UICorner_2.CornerRadius = UDim.new(0, 4)
-		UICorner_2.Parent = Frame_2
+		TextLabel_2.Parent = Frame
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.BackgroundTransparency = 1.000
+		TextLabel_2.Position = UDim2.new(-0.000496347551, 0, 0.140473083, 0)
+		TextLabel_2.Size = UDim2.new(0, 227, 0, 58)
+		TextLabel_2.Font = Enum.Font.Gotham
+		TextLabel_2.Text = desc
+		TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.TextSize = 19.000
+		TextLabel_2.TextWrapped = true
+		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
 
-		play_arrow.Name = "play_arrow"
-		play_arrow.Parent = Frame
-		play_arrow.BackgroundTransparency = 1.000
-		play_arrow.LayoutOrder = 5
-		play_arrow.Position = UDim2.new(0.715814412, 0, 0.774010301, 0)
-		play_arrow.Size = UDim2.new(0, 25, 0, 25)
-		play_arrow.ZIndex = 2
-		play_arrow.Image = "rbxassetid://3926307971"
-		play_arrow.ImageRectOffset = Vector2.new(764, 244)
-		play_arrow.ImageRectSize = Vector2.new(36, 36)
+		UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+		UIGradient_2.Parent = TextLabel_2
 
-		ImageLabel.Parent = Frame
-		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		ImageLabel.BackgroundTransparency = 1.000
-		ImageLabel.BorderSizePixel = 0
-		ImageLabel.Position = UDim2.new(0.181250006, 0, 0.100000001, 0)
-		ImageLabel.Size = UDim2.new(0, 100, 0, 100)
-		ImageLabel.Image = thumbnail
+		TextLabel_3.Parent = Frame
+		TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_3.BackgroundTransparency = 1.000
+		TextLabel_3.Position = UDim2.new(-0.000496347551, 0, 0.823292494, 0)
+		TextLabel_3.Size = UDim2.new(0, 227, 0, 20)
+		TextLabel_3.Font = Enum.Font.Gotham
+		TextLabel_3.Text = "Damage:"..damagenum
+		TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_3.TextSize = 19.000
+		TextLabel_3.TextWrapped = true
+		TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_3.TextYAlignment = Enum.TextYAlignment.Top
 
-		play_arrow.MouseButton1Click:Connect(function()
-			scriptcallback()
-			spin(play_arrow)
-		end)
+		UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+		UIGradient_3.Parent = TextLabel_3
+
+		TextLabel_4.Parent = Frame
+		TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_4.BackgroundTransparency = 1.000
+		TextLabel_4.Position = UDim2.new(-0.000496347551, 0, -0.00049607869, 0)
+		TextLabel_4.Size = UDim2.new(0, 227, 0, 20)
+		TextLabel_4.Font = Enum.Font.Gotham
+		TextLabel_4.Text = movename
+		TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_4.TextSize = 19.000
+		TextLabel_4.TextWrapped = true
+		TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel_4.TextYAlignment = Enum.TextYAlignment.Top
+
+		UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+		UIGradient_4.Parent = TextLabel_4
+
+		UIPadding.Parent = Frame
+		UIPadding.PaddingBottom = UDim.new(0, 5)
+		UIPadding.PaddingLeft = UDim.new(0, 5)
+		UIPadding.PaddingRight = UDim.new(0, 5)
+		UIPadding.PaddingTop = UDim.new(0, 5)
+
+		UICorner.CornerRadius = UDim.new(0, 5)
+		UICorner.Parent = Frame
 	end
 	return scripthandler
 end
