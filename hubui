@@ -183,7 +183,7 @@ function Mogus:CreateUI()
 		local UIPadding = Instance.new("UIPadding")
 		local UICorner = Instance.new("UICorner")
 
-		Frame.Parent = ScrollingFrame
+		Frame.Parent = moveguihandler
 		Frame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 		Frame.BorderSizePixel = 0
 		Frame.Position = UDim2.new(0.677575767, 0, 0.568300307, 0)
