@@ -130,7 +130,7 @@ function Mogus:CreateUI()
     
     local thing = Instance.new("UIStroke")
     thing.Parent = Frame_5
-    thing.Color = Color3.new(1, 1, 1)
+    thing.Color = Color3.fromRGB(255, 255, 255)
     thing.Thickness = 0
     thing.Transparency = 0.7 
     
