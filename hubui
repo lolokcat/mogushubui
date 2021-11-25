@@ -2,134 +2,151 @@ local Mogus = {}
 
 function Mogus:CreateUI()
 	local ScreenGui = Instance.new("ScreenGui")
-    local Frame = Instance.new("Frame")
-    local UICorner = Instance.new("UICorner")
-    local Frame_2 = Instance.new("Frame")
-    local Frame_3 = Instance.new("Frame")
-    local Frame_4 = Instance.new("Frame")
-    local UICorner_2 = Instance.new("UICorner")
-    local TextLabel = Instance.new("TextLabel")
-    local UIGradient = Instance.new("UIGradient")
-    local TextLabel_2 = Instance.new("TextLabel")
-    local UIGradient_2 = Instance.new("UIGradient")
-    local TextLabel_3 = Instance.new("TextLabel")
-    local UIGradient_3 = Instance.new("UIGradient")
-    local ScrollingFrame = Instance.new("ScrollingFrame")
-    local UIGridLayout = Instance.new("UIGridLayout")
-    local UIPadding = Instance.new("UIPadding")
-    local Frame_5 = Instance.new("Frame")
-    local UICorner_3 = Instance.new("UICorner")
+	local Main = Instance.new("Frame")
+	local corner3 = Instance.new("UICorner")
+	local extra = Instance.new("Frame")
+	local extra2 = Instance.new("Frame")
+	local heading = Instance.new("Frame")
+	local corner2 = Instance.new("UICorner")
+	local name = Instance.new("TextLabel")
+	local gradient = Instance.new("UIGradient")
+	local credits = Instance.new("TextLabel")
+	local gradient2 = Instance.new("UIGradient")
+	local version = Instance.new("TextLabel")
+	local gradient3 = Instance.new("UIGradient")
+	local moveguihandler = Instance.new("ScrollingFrame")
+	local gridlayout = Instance.new("UIGridLayout")
+	local padding = Instance.new("UIPadding")
+	local mainaura = Instance.new("Frame")
+	local corner = Instance.new("UICorner")
 
-    ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    
-    Frame.Parent = ScreenGui
-    Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-    Frame.Position = UDim2.new(0.278280556, 0, 0.269030273, 0)
-    Frame.Size = UDim2.new(0, 588, 0, 443)
-    
-    UICorner.CornerRadius = UDim.new(0, 4)
-    UICorner.Parent = Frame
-    
-    Frame_2.Parent = Frame
-    Frame_2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-    Frame_2.BorderSizePixel = 0
-    Frame_2.Position = UDim2.new(-0.000729723019, 0, -0.0148786623, 0)
-    Frame_2.Size = UDim2.new(0, 588, 0, 12)
-    
-    Frame_3.Parent = ScreenGui
-    Frame_3.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-    Frame_3.BorderSizePixel = 0
-    Frame_3.Position = UDim2.new(0.278280556, 0, 0.269030273, 0)
-    Frame_3.Size = UDim2.new(0, 588, 0, 6)
-    
-    Frame_4.Parent = ScreenGui
-    Frame_4.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-    Frame_4.Position = UDim2.new(0.278181821, 0, 0.221063614, 0)
-    Frame_4.Size = UDim2.new(0, 588, 0, 46)
-    
-    UICorner_2.CornerRadius = UDim.new(0, 4)
-    UICorner_2.Parent = Frame_4
-    
-    TextLabel.Parent = Frame_4
-    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel.BackgroundTransparency = 1.000
-    TextLabel.Position = UDim2.new(0.0238095243, 0, 0, 0)
-    TextLabel.Size = UDim2.new(0, 574, 0, 46)
-    TextLabel.Font = Enum.Font.Gotham
-    TextLabel.Text = "Moderation Spec // Movelist"
-    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel.TextSize = 25.000
-    TextLabel.TextWrapped = true
-    TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-    
-    UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
-    UIGradient.Parent = TextLabel
-    
-    TextLabel_2.Parent = Frame_4
-    TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel_2.BackgroundTransparency = 1.000
-    TextLabel_2.Position = UDim2.new(0.363945574, 0, 10, 0)
-    TextLabel_2.Size = UDim2.new(0, 158, 0, 21)
-    TextLabel_2.Font = Enum.Font.Gotham
-    TextLabel_2.Text = "Made by LOLOK"
-    TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel_2.TextScaled = true
-    TextLabel_2.TextSize = 25.000
-    TextLabel_2.TextWrapped = true
-    TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
-    
-    UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
-    UIGradient_2.Parent = TextLabel_2
-    
-    TextLabel_3.Parent = Frame_4
-    TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel_3.BackgroundTransparency = 1.000
-    TextLabel_3.Position = UDim2.new(0.891156435, 0, 10, 0)
-    TextLabel_3.Size = UDim2.new(0, 56, 0, 21)
-    TextLabel_3.Font = Enum.Font.Gotham
-    TextLabel_3.Text = "v1.00"
-    TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel_3.TextScaled = true
-    TextLabel_3.TextSize = 25.000
-    TextLabel_3.TextWrapped = true
-    TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
-    
-    UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
-    UIGradient_3.Parent = TextLabel_3
-    
-    ScrollingFrame.Parent = ScreenGui
-    ScrollingFrame.Active = true
-    ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    ScrollingFrame.BackgroundTransparency = 1.000
-    ScrollingFrame.BorderSizePixel = 0
-    ScrollingFrame.Position = UDim2.new(0.278181821, 0, 0.269030243, 0)
-    ScrollingFrame.Size = UDim2.new(0, 588, 0, 443)
-    ScrollingFrame.ScrollBarThickness = 5
-    
-    UIGridLayout.Parent = ScrollingFrame
-    UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-    UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-    UIGridLayout.CellPadding = UDim2.new(0, 10, 0, 10)
-    UIGridLayout.CellSize = UDim2.new(0, 227, 0, 227)
-    
-    UIPadding.Parent = ScrollingFrame
-    UIPadding.PaddingBottom = UDim.new(0, 5)
-    UIPadding.PaddingLeft = UDim.new(0, 5)
-    UIPadding.PaddingRight = UDim.new(0, 5)
-    UIPadding.PaddingTop = UDim.new(0, 5)
-    
-    Frame_5.Parent = ScreenGui
-    Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Frame_5.Position = UDim2.new(0.278020501, 0, 0.221063614, 0)
-    Frame_5.Size = UDim2.new(0, 588, 0, 489)
-    Frame_5.ZIndex = 0
-    
-    UICorner_3.CornerRadius = UDim.new(0, 4)
-    UICorner_3.Parent = Frame_5
+	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	Main.Name = "Main"
+	Main.Parent = ScreenGui
+	Main.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+	Main.Position = UDim2.new(0.278280556, 0, 0.269030273, 0)
+	Main.Size = UDim2.new(0, 588, 0, 443)
+
+	corner3.CornerRadius = UDim.new(0, 4)
+	corner3.Name = "corner3"
+	corner3.Parent = Main
+
+	extra.Name = "extra"
+	extra.Parent = Main
+	extra.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+	extra.BorderSizePixel = 0
+	extra.Position = UDim2.new(-0.000729723019, 0, -0.0148786623, 0)
+	extra.Size = UDim2.new(0, 588, 0, 12)
+
+	extra2.Name = "extra2"
+	extra2.Parent = ScreenGui
+	extra2.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+	extra2.BorderSizePixel = 0
+	extra2.Position = UDim2.new(0.278280556, 0, 0.269030273, 0)
+	extra2.Size = UDim2.new(0, 588, 0, 6)
+
+	heading.Name = "heading"
+	heading.Parent = ScreenGui
+	heading.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+	heading.Position = UDim2.new(0.278181821, 0, 0.221063614, 0)
+	heading.Size = UDim2.new(0, 588, 0, 46)
+
+	corner2.CornerRadius = UDim.new(0, 4)
+	corner2.Name = "corner2"
+	corner2.Parent = heading
+
+	name.Name = "name"
+	name.Parent = heading
+	name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	name.BackgroundTransparency = 1.000
+	name.Position = UDim2.new(0.0238095243, 0, 0, 0)
+	name.Size = UDim2.new(0, 574, 0, 46)
+	name.Font = Enum.Font.Gotham
+	name.Text = "Moderation Spec // Movelist"
+	name.TextColor3 = Color3.fromRGB(255, 255, 255)
+	name.TextSize = 25.000
+	name.TextWrapped = true
+	name.TextXAlignment = Enum.TextXAlignment.Left
+
+	gradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+	gradient.Name = "gradient"
+	gradient.Parent = name
+
+	credits.Name = "credits"
+	credits.Parent = heading
+	credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	credits.BackgroundTransparency = 1.000
+	credits.Position = UDim2.new(0.363945574, 0, 10, 0)
+	credits.Size = UDim2.new(0, 158, 0, 21)
+	credits.Font = Enum.Font.Gotham
+	credits.Text = "Made by LOLOK"
+	credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+	credits.TextScaled = true
+	credits.TextSize = 25.000
+	credits.TextWrapped = true
+	credits.TextXAlignment = Enum.TextXAlignment.Left
+
+	gradient2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+	gradient2.Name = "gradient2"
+	gradient2.Parent = credits
+
+	version.Name = "version"
+	version.Parent = heading
+	version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	version.BackgroundTransparency = 1.000
+	version.Position = UDim2.new(0.891156435, 0, 10, 0)
+	version.Size = UDim2.new(0, 56, 0, 21)
+	version.Font = Enum.Font.Gotham
+	version.Text = "v1.00"
+	version.TextColor3 = Color3.fromRGB(255, 255, 255)
+	version.TextScaled = true
+	version.TextSize = 25.000
+	version.TextWrapped = true
+	version.TextXAlignment = Enum.TextXAlignment.Left
+
+	gradient3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(56, 140, 149)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+	gradient3.Name = "gradient3"
+	gradient3.Parent = version
+
+	moveguihandler.Name = "moveguihandler"
+	moveguihandler.Parent = ScreenGui
+	moveguihandler.Active = true
+	moveguihandler.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	moveguihandler.BackgroundTransparency = 1.000
+	moveguihandler.BorderSizePixel = 0
+	moveguihandler.Position = UDim2.new(0.278181821, 0, 0.269030243, 0)
+	moveguihandler.Size = UDim2.new(0, 588, 0, 443)
+	moveguihandler.ScrollBarThickness = 5
+
+	gridlayout.Name = "gridlayout"
+	gridlayout.Parent = moveguihandler
+	gridlayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	gridlayout.SortOrder = Enum.SortOrder.LayoutOrder
+	gridlayout.CellPadding = UDim2.new(0, 10, 0, 10)
+	gridlayout.CellSize = UDim2.new(0, 227, 0, 227)
+
+	padding.Name = "padding"
+	padding.Parent = moveguihandler
+	padding.PaddingBottom = UDim.new(0, 5)
+	padding.PaddingLeft = UDim.new(0, 5)
+	padding.PaddingRight = UDim.new(0, 5)
+	padding.PaddingTop = UDim.new(0, 5)
+
+	mainaura.Name = "mainaura"
+	mainaura.Parent = ScreenGui
+	mainaura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	mainaura.Position = UDim2.new(0.278020501, 0, 0.221063614, 0)
+	mainaura.Size = UDim2.new(0, 588, 0, 489)
+	mainaura.ZIndex = 0
+
+	corner.CornerRadius = UDim.new(0, 4)
+	corner.Name = "corner"
+	corner.Parent = mainaura
     
     local thing = Instance.new("UIStroke")
-    thing.Parent = Frame_5
+    thing.Parent = mainaura
     thing.Color = Color3.fromRGB(255, 255, 255)
     thing.Thickness = 0
     thing.Transparency = 0.7 
