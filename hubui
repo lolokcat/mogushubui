@@ -164,8 +164,10 @@ function Mogus:CreateUI()
     coroutine.resume(coroutine.create(function()
         while true do wait()
             AudioLoudness = sound.PlaybackLoudness
-            thing.Thickness = AudioLoudness
+            thing.Thickness = math.clamp(AudioLoudness, 0, 25)
         end
+    end))
+    
     end))
 
     local scripthandler = {}
